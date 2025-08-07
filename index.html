@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <title>é›¶è·‘C16ä¸Šå¸‚-3Dè¯•è½¦è§¦æ‰‹å¯åŠ</title>
+  <meta name="description" content="å¿ƒåŠ¨å¤–è§‚ï¼Œé«˜é˜¶æ™ºé©¾ï¼Œè¶…å¤§ç©ºé—´â€¦â€¦å…¨æ–¹ä½çš„å¿ƒåŠ¨ä¹‹æ—…ï¼Œä¸€è§¦å³å‘">
+  <!-- <script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script>
+  <script>
+    // VConsole é»˜è®¤ä¼šæŒ‚è½½åˆ° `window.VConsole` ä¸Š
+    var vConsole = new window.VConsole();
+  </script> -->
+  <script src="/libs/aplus.js"></script>
+  <script>
+    window.aplus_queue = window.aplus_queue || [];
+    window.aplustag = function atag() { aplus_queue.push({ action: 'aplus.setMetaInfo', arguments: [arguments[0], arguments[1]] }) }
+
+    aplustag('appKey', '66695a84cac2a664de480e61');
+    aplustag('DEBUG', false);
+  </script>
+  <script>
+    // baseURL = "/c16";
+    baseURL = "";
+    partytown = {
+      baseURL,
+      debug: false,
+      forward: ['leaptag', 'leaptagInit', 'aplustag'],
+      lib: baseURL + "/~partytown/",
+      resolveUrl: function (url, location, type) {
+        if (type === 'script') {
+          if (url.pathname === "/eg.js" || url.pathname === "/c.js") {
+            return new URL(location.origin + this.baseURL + "/libs" + url.pathname);
+          }
+        }
+        return url;
+      },
+    };
+  </script>
+  <script>
+    var _czc = _czc || [];
+    (function () {
+      var um = document.createElement("script");
+      um.src = "https://s4.cnzz.com/z.js?id=1281363907&async=1";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(um, s);
+    })();
+  </script>
+  <script>
+    var appid = 'EA242DEB0BA24717AE767D141B5609EF';
+    var vn = '20240618';
+    var vc = '1.0';
+    var TDBaseUrl = 'https://jic.talkingdata.com/app/h5/v1/websdk';
+    var TDRequestUrl = 'https://lpex-eventtracking.leapmotor.com/g/w';
+    function createScriptTd(url) { var _head = document.getElementsByTagName('head')[0]; var _script = document.createElement('script'); _script.type = 'text/javascript'; _script.src = url; _head.appendChild(_script); } createScriptTd(TDBaseUrl + '/js/sdk_release.js'); if (!window['JSON'] || typeof JSON !== 'object') { createScriptTd(TDBaseUrl + '/js/json2.js'); } window['TDAPP'] = {}; window['TDAPP'].onEvent = function (id, label, params) { if (arguments.length > 0) { try { var opts = { count: 1, start: new Date().getTime() }; if (id != undefined) { opts['id'] = typeof id != 'string' ? JSON.stringify(id) : id; } if (label != undefined) { opts['label'] = typeof label != 'string' ? JSON.stringify(label) : label; } else { opts['label'] = ''; } if (params != undefined) { var isJson = function (obj) { var isjson = typeof (obj) == 'object' && Object.prototype.toString.call(obj).toLowerCase() == '[object object]' && !obj.length; return isjson; }; if (isJson(params)) { opts['params'] = params; } else { opts['params'] = { params: '' }; } } var eventName = '__TD_td-init-event'; var ev = localStorage[eventName]; if (ev) { var ca = JSON.parse(ev); ca.push(opts); localStorage.setItem(eventName, JSON.stringify(ca)); return; } localStorage.setItem(eventName, '[' + JSON.stringify(opts) + ']'); } catch (e) { } } };
+  </script>
+  <script>
+    async function getAddressByIp() {
+      const response = await fetch('https://apptec.leapmotor.cn/ipAnalysis/getAddressByIp', { method: 'GET' });
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return await response.json();
+    }
+
+    function clearScreen() {
+      //console.clear && console.clear();
+    }
+
+    const debug = location.href.includes('localhost') || location.href.includes('192.168');
+
+    function console_log(...args) {
+      debug && console.log(...args);
+    }
+
+    window._czc = window._czc || [];
+    window.leapWebBuiredJS = { pageDataCache: {}, deviceInfo: null, pageConfig: {}, localEnv: "0", city: "æœªçŸ¥", isWeb: !1, isH5CityReady: !1, H5BuriedList: [], initWebBuriedData: function (e = { localEnv: "", pageConfig: "", city: "", isWeb: !1, isH5CityReady: !1 }) { Object.keys(e).forEach(i => { e[i] && (this[i] = e[i]) }), console_log("-----------initWebBuriedData", this, e), e.isH5CityReady && this.H5BuriedList.forEach(e => { const { label: i, actionValue: n, category: t } = e; "0" === this.localEnv && console_log("H5åŸŽå¸‚èŽ·å–åŽ-åŸ‹ç‚¹æˆåŠŸ", "category:", t, "action:", n, "label:", i), window.TDAPP.onEvent(i.event_id, t, i), window._czc && window._czc.push(["_trackEvent", ...[t, n, JSON.stringify(i)]]) }) }, baseWebBuriedFn: function ({ type: e = "event", actionValue: i = "", labelData: n = {} }) { if (window.document.hidden && "pageView" === e) return void console_log("é¡µé¢è¢«åŽŸç”Ÿé¢„åŠ è½½æ—¶ä¸åŸ‹é¡µé¢æµè§ˆäº‹ä»¶"); const { source4Suvery: t, page: s, sr: a, segmentName: o, segment2Name: d, wxCommonTrack: c } = this.getUrlParamsList() || {}, { APPVersion: r = "", LMAccID: g = "", LMImei: l = "", APPPlatform: h = "", hadMyselfCars: w = "", hadCar: p, hadCars: m, env: u, city: f } = window._userInfo || {}, { device_type: v, device_version: y, env: x, openid: _, user_id: O, unionid: b, city: C, source4Suvery: E } = c ? JSON.parse(decodeURIComponent(c)) : {}; let P = {}; if (P = navigator.userAgent.toLowerCase().indexOf("miniprogram") > -1 ? { user_id: O, device_type: v, device_version: y, env: x || this.localEnv, openid: _, unionid: b, system: "Wx", city: C } : { user_id: g, APPVersion: r, device_id: l, env: u || this.localEnv, hadMyselfCars: w, hadCars: p || m || "", system: h || "Web", city: f || this.city }, "pageView" === e || "pageDuration" === e) { let i = this.pageDataCache; const t = s || n.page || i.page || ""; if (!t) return; n.page = t, "pageView" === e && ((i = (i = i.page != n.page ? {} : { ...i, ...n }).page ? i : n).pageEnterTime = +new Date, this.pageDataCache = i) } this.deviceInfo || (this.deviceInfo = this.getDeviceInformation()); const { name: M, version: D = "" } = this.deviceInfo, W = +new Date, A = s && (d || o) ? d || o : this.pageConfig[n.page] ? this.pageConfig[n.page].pageName : ""; let S = { device_type: M, device_version: D, ProtocolVersion: "20231102", event_time: this.format(W, "yyyy/MM/dd hh:mm:ss"), pagename: A, sr: a, is_new_sign: "1", env: this.localEnv, motion: "ä¸»åŠ¨", ...P }; if ("pageView" === e || "pageDuration" === e) { let n = { event_id: "page_event", url: window.location.href, source: E || t || "", motion: "ä¸»åŠ¨" }; if (n = { ...n, ...this.pageDataCache, ...{ pageEnterTime: this.format(this.pageDataCache.pageEnterTime, "yyyy/MM/dd hh:mm:ss") } }, o && (n.tab_name = o), d && (n.name = d), "pageDuration" === e) { i = "é¡µé¢åœç•™æ—¶é•¿"; const e = this.pageDataCache.pageEnterTime || 0; n = { ...n, ...{ time: Math.ceil((W - e) / 1e3), event_number: "p102", trigger: "è¿”å›žæˆ–è¿›å…¥ä¸‹ä¸€é¡µ", event_name: "page_duration" } } } else "pageView" === e && (i = "é¡µé¢æµè§ˆ", n = { ...n, ...{ event_number: "p101", trigger: "ç‚¹å‡»è¿›å…¥é¡µé¢", event_name: "page_view" } }); S = { ...S, ...n } } S = Object.assign(S, n), !this.isWeb || this.isH5CityReady ? ("0" === this.localEnv && console_log("åŸ‹ç‚¹æˆåŠŸ", e, "category:", A, "action:", i, "label:", S), window.TDAPP.onEvent(S.event_id, A, S), window._czc && window._czc.push(["_trackEvent", ...[A, i, JSON.stringify(S)]])) : this.H5BuriedList.push({ label: S, category: A, actionValue: i }) }, detecMobile: function () { let e = { system: "", device: "" }, i = navigator.userAgent, n = ""; if ((i.includes("iPhone") || i.includes("iPad")) && (i.includes("iPad") ? e.device = "iPad" : e.device = "iPhone", (n = i.match(/iPhone OS .*?(?= )/) || i.match(/CPU OS .*?(?= )/)) && n.length > 0)) { const i = String(n[0]).split(" ")[2]; i && (i.split("_").forEach((i, n) => { e.system = e.system + (0 === n ? i : "0" == i ? "" : "." + i) }), e.system = "IOS " + e.system) } if (i.includes("Android") && ((n = i.match(/Android.*; ?(.*(?= Build))/)) && n.length > 1 && (e.device = n[1]), (n = i.match(/Android.*?(?=;)/)) && n.length > 0)) { const i = String(n[0]).split(" ")[1]; i && (i.split(".").forEach((i, n) => { e.system = e.system + (0 === n ? i : "0" == i ? "" : "." + i) }), e.system = "Android " + e.system) } return e }, getDeviceInformation: function () { var e = navigator.userAgent.toLowerCase(), i = "Unknown", n = "Unknown"; return e.indexOf("win") > -1 ? (i = "Windows", n = e.indexOf("windows nt 5.0") > -1 ? "Windows 2000" : e.indexOf("windows nt 5.1") > -1 || e.indexOf("windows nt 5.2") > -1 ? "Windows XP" : e.indexOf("windows nt 6.0") > -1 ? "Windows Vista" : e.indexOf("windows nt 6.1") > -1 || e.indexOf("windows 7") > -1 ? "Windows 7" : e.indexOf("windows nt 6.2") > -1 || e.indexOf("windows 8") > -1 ? "Windows 8" : e.indexOf("windows nt 6.3") > -1 ? "Windows 8.1" : e.indexOf("windows nt 6.2") > -1 || e.indexOf("windows nt 10.0") > -1 ? "Windows 10" : "Unknown") : e.indexOf("iphone") > -1 ? (i = this.detecMobile().device, n = this.detecMobile().system) : e.indexOf("mac os x") > -1 ? e.indexOf("ipad") > -1 ? (i = "iPad", n = this.detecMobile().system) : i = "Mac" : e.indexOf("linux") > -1 ? e.indexOf("android") > -1 ? (i = this.detecMobile().device, n = this.detecMobile().system) : i = "Linux" : i = e.indexOf("x11") > -1 || e.indexOf("unix") > -1 || e.indexOf("sunname") > -1 || e.indexOf("bsd") > -1 ? "Unix" : "Unknown", { name: i, version: n } }, format: function (e, i) { const n = { "M+": (e = new Date(e)).getMonth() + 1, "d+": e.getDate(), "h+": e.getHours(), "m+": e.getMinutes(), "s+": e.getSeconds(), "q+": Math.floor((e.getMonth() + 3) / 3), S: e.getMilliseconds() }; /(y+)/.test(i) && (i = i.replace(RegExp.$1, (e.getFullYear() + "").substr(4 - RegExp.$1.length))); for (const e in n) new RegExp("(" + e + ")").test(i) && (i = i.replace(RegExp.$1, 1 === RegExp.$1.length ? n[e] : ("00" + n[e]).substr(("" + n[e]).length))); return i }, getUrlParamsList: function () { var e = location.search.substring(1); e = e.split("&"); var i = {}; return e && e.map(e => { const n = e.split("="); 2 === n.length && (i[n[0]] = n[1]) }), i } };
+
+    window.leaptagInit = function leaptagInit(pageConfig) {
+      const origin = window.location.origin;
+      const localEnv = (origin.indexOf('cn.leapmotor') > -1 || origin.indexOf('www.leapmotor.com') > -1) ? '1' : '0';
+      const ua = navigator.userAgent.toLowerCase();
+      const isWeb = ua.indexOf('miniprogram') === -1 && !window.AndroidWebView && !window.LMGetID1;
+
+      window.leapWebBuiredJS.initWebBuriedData({ isWeb, pageConfig, localEnv });
+
+      getAddressByIp().then(res => {
+        window.leapWebBuiredJS.initWebBuriedData({ isH5CityReady: true, city: res.data.city });
+        clearScreen();
+      }).catch(() => {
+        window.leapWebBuiredJS.initWebBuriedData({ isH5CityReady: true });
+        clearScreen();
+      })
+    }
+
+    window.leaptag = function leaptag({ action = 'ç‚¹å‡»', type = 'event', labelData = {} } = {}) {
+      window.leapWebBuiredJS.baseWebBuriedFn({ type, actionValue: action, labelData });
+      clearScreen();
+    };
+  </script>
+  <script type="module" crossorigin src="/assets/index-DCdLfoyW.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/vendor-DlaXOXsC.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-7eMG_YBZ.css">
+</head>
+
+<body>
+  <script>
+    window.leaptag = window.leaptag || function leaptag() { }
+    window.leaptagInit = window.leaptagInit || function leaptagInit() { }
+
+    leaptagInit({
+      b10074: { pageName: "C16-3Dçœ‹è½¦" }
+    })
+    leaptag({
+      action: 'C16-3Dçœ‹è½¦é¡µé¢æµè§ˆ',
+      labelData: {
+        page: 'b10074',
+        event_number: 'p101',
+        event_id: 'page_event',
+        event_name: 'page_view',
+        source: '4'
+      }
+    })
+    console.log("%c by https://gamemcu.com/", "border:2px solid gray; padding:5px; font-family:monospace; font-size:11px;");
+  </script>
+  <div id="app"></div>
+</body>
+
+</html>
